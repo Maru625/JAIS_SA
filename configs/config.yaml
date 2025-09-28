@@ -1,0 +1,7 @@
+defaults:
+  - model: mc_dropout_dnn
+  - data: default
+
+# General settings
+project_name: "JAIS_SA_Training"
+run_name: "${now:%Y-%m-%d}_${now:%H-%M-%S}_${data.name}_${model.name}"

@@ -1,0 +1,3 @@
+name: "default_dataset"
+path: "data/processed/processed_data.csv"
+batch_size: 32

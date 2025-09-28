@@ -1,0 +1,15 @@
+name: "mc_dropout_dnn"
+
+# Model architecture
+input_size: 784 # 28*28 for MNIST-like data
+hidden_units: 128
+output_size: 10
+dropout_rate: 0.5
+
+# Training hyperparameters
+optimizer: "adam"
+lr: 0.001
+epochs: 15
+
+# Evaluation settings
+inference_samples: 50 # Number of forward passes for MC Dropout

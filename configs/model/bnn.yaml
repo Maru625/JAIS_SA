@@ -1,0 +1,16 @@
+name: "bnn"
+
+# Model architecture
+input_size: 784 # 28*28 for MNIST-like data
+hidden_units: 100
+output_size: 10
+
+# Prior distribution parameters for BNN layers
+prior_mu: 0.0
+prior_sigma: 0.1
+
+# Training hyperparameters
+optimizer: "adam"
+lr: 0.01
+epochs: 20
+kl_weight: 0.1 # Weight for the KL divergence term in ELBO loss
